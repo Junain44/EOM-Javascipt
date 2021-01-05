@@ -64,6 +64,13 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition:  0.5s;
+}
+header.sticky 
+{
+  background:  #fff;
+  padding: 40px 100px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0,1);
 }
 header .logo
 {
@@ -73,6 +80,11 @@ header .logo
   text-decoration: none;
   font-weight: 700;
   letter-spacing: 2px;
+}
+header.sticky .logo
+{
+  color: #111;
+  
 }
 header ul
 {
@@ -115,11 +127,12 @@ header ul li
 }
 .contentBx h3
 {
- font-size: 24px;
+ font-size: 40px;
  margin-bottom: 10px;
 }
 .w50
 {
+  font-size: 35px;
   min-width: 50%;
 }
 img
