@@ -132,6 +132,12 @@ header.sticky ul li a
  font-size: 35px;
  margin-bottom: 10px;
 }
+.contentBx p
+{
+  color: rgb(0, 0, 0);
+  font-style:italic;
+  font-size: 16px;
+}
 .w50
 {
   font-size: 15px;
@@ -148,19 +154,43 @@ img
 .container {
   width: 100%; /* Full width */
   background-color: #ddd; /* Grey background */
+  overflow: hidden;
+  box-shadow: 0 0 10px #2187e7b3;
+
 }
 
 .skills {
   text-align: right; /* Right-align text */
   padding-top: 10px; /* Add top padding */
   padding-bottom: 10px; /* Add bottom padding */
-  color: white; /* White text color */
+  color: black; /* White text color */
 }
 
-.html {width: 90%; background-color: #4CAF50;} /* Green */
-.css {width: 80%; background-color: #2196F3;} /* Blue */
-.js {width: 65%; background-color: #f44336;} /* Red */
-.php {width: 60%; background-color: #808080;} /* Dark Grey */
+.html
+{
+  width: 90%; 
+  background-color: #4CAF50; 
+} 
+.css
+{
+  width: 70%; 
+  background-color: #2196F3;
+} 
+.js 
+{
+  width: 45%; 
+  background-color: #f44336;
+}
+.sql 
+{
+  width: 60%; 
+  background-color: #808080;
+}
+.pyt 
+{
+  width: 65%; 
+  background-color: #bad619;
+} 
 
 .services
 {
@@ -218,24 +248,34 @@ img
 }
 .testimonials
 {
-  background: #f7f7f7;
+  background: #000000;
+}
+.testimonials h2
+{
+  font-size: 40px;
+  color: #fff;
+}
+.testimonials p
+{
+  font-size: 30px;
+  color: #ddd;
 }
 .testimonials .content
 {
   display: flex;
-  justify-content: space-between;
-  flex-wrap:  wrap;
+  justify-content: center;
+  flex-wrap:  wrap;  
 }
 .testimonials .content .testimonialBx
 {
-  max-width: calc(25% - 20px);
+  max-width: calc(50% - 40px);
   padding: 60px 40px;
   margin: 20px;
-  background: #2196f3;  
+  background: #ffe601;  
 }
 .testimonials .content .testimonialBx p
 {
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-style: italic;
   font-size: 16px;
   font-weight: 300;
@@ -244,7 +284,7 @@ img
 {
   margin-top: 40px;
   text-align: end;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-weight: 600;
   font-size: 20px;
   line-height: 1em;
@@ -253,4 +293,11 @@ img
 {
   font-size: 14px;
   font-weight: 400;
+  font-style: italic;
 }
+.testimonials .content .testimonialBx img
+{
+    max-width: 50%; 
+    max-height: 70%;    
+}
+
