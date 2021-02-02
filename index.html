@@ -9,28 +9,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--Logo topleft of screen-->
     <header>
         <a href="#" class="logo">Portfolio</a>
         <div class="toggle"></div>
+        <!--Nav Bar-->
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Testimonial</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#testimonials">Testimonial</a></li>
+            <li><a href="#contact ">Contact</a></li>
        </ul>
     </header>
-    <section class="banner">
-        <div class="textBx">
+    <!--1st section on the homepage-->
+    <section class="banner" id="home"><!--Creating the section and div-->
+        <div class="textBx">"><!--Creating the textBx and div-->
            <h2>Haloya, I'm<br><span> Junain Sedick Reynecke.</span></h2>
            <h3>I'm a Junior Web Developer.</h3>
-           <a href="#" class="btn">About Me</a>
+           <!--Button at the bottom of textBx-->
+           <a href="#about" class="btn">About Me</a>
        </div>
    </section> 
-   <section class="about">
-       <div class="heading">
-           <h2>About Me</h2>
+   <!--2nd section on About Page-->
+   <section class="about" id="about"><!--Creating the section and div-->
+       <div class="heading">"><!--Creating the section-->
+           <h2>About Me</h2><!--The Heading-->
        </div>
        
        <div class="content">
@@ -82,7 +87,7 @@
     </div>
  </section> 
    
-   <section class="services">
+   <section class="services" id="services">
        <div class="heading white">
            <h2>Services</h2>
            <p>We specialise in Website Design Up to 10 pages</p>
@@ -105,7 +110,7 @@
             </div>
         </section>
 
-    <section class="work">
+    <section class="work" id="work">
         <div class="heading">
             <h2>My Latest Work</h2>
             
@@ -133,7 +138,7 @@
          </div>
     </section>
 
-     <section class="testimonials">
+     <section class="testimonials" id="testimonials">
         <div class="heading">
             <h2>Testimonials</h2>
             <p>Supporting Words</p>
@@ -178,7 +183,7 @@
         </div>
      </section>
 
-     <section class="contact">
+     <section class="contact" id="contact">
          <div class="heading">
              <h2>Contact Us</h2>
              <p>Everything you need contact us</p>
@@ -207,8 +212,9 @@
                             </div>
                         </div>
                         <div class="box">
-                            <div class="icon"></div>
+                            <div class="icon">
                             <i class="fa fa-envelope-o"></i>
+                        </div>
                             <div class="text">
                                 <h3>Email</h3>
                                 <p>junaingallie44@gmail.com</p>
@@ -225,43 +231,16 @@
                                 <input type="submit" value="Send">
                             </form>
                         </div>
-                    </div>
+                    </div> 
     </section>
-    
-         
-   
-         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script type="text/javascript">
+    <div class="copyright">
+        <p>Copyright &copy|Designed by Junain Reynecke </p>
+    </div>
+  <script type="text/javascript">
    window.addEventListener('scroll',function(){
        var header = document.querySelector('header');
        header.classList.toggle('sticky', window.scrollY > 0);
    })
-
 </script>
 </body>
 </html>
