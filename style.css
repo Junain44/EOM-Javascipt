@@ -376,13 +376,20 @@ img
   color: #fff;
   display: flex;
   justify-content: center;
+<<<<<<< HEAD
   align-items: center ;
+=======
+>>>>>>> 1e2d98a1f6c7cc9197af7b37f24f9002d98982f8
   font-size: 24px;
 }
 .contactInfoBx .box .text
 {
   display: flex;
+<<<<<<< HEAD
   margin-left: 20px ;  
+=======
+  margin-left: 20px;
+>>>>>>> 1e2d98a1f6c7cc9197af7b37f24f9002d98982f8
   font-size: 16px;
   color: #fff;
   flex-direction: column;
@@ -392,6 +399,7 @@ img
 {
   font-weight: 500;
   color:#2196f3;
+<<<<<<< HEAD
   margin-bottom: 0 ;
 }
 .copyright
@@ -403,3 +411,8 @@ img
 }
  /*Responsive/* 
  
+=======
+  margin-bottom: 0%;
+}
+
+>>>>>>> 1e2d98a1f6c7cc9197af7b37f24f9002d98982f8
