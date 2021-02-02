@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 *
+/*        */
 {
  margin: 0;
  padding: 0;
  box-sizing: border-box;
- font-family:  'Poppins, sans-serif';
+ font-family:  'Poppins', sans-serif;
+ scroll-behavior: smooth;
+
 }
 section
 {
@@ -156,16 +159,15 @@ img
   background-color: #ddd; /* Grey background */
   overflow: hidden;
   box-shadow: 0 0 10px #2187e7b3;
-
 }
 
 .skills {
-  text-align: right; /* Right-align text */
-  padding-top: 10px; /* Add top padding */
-  padding-bottom: 10px; /* Add bottom padding */
-  color: black; /* White text color */
+  text-align: right; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  color: black;
 }
-
+/* SKILLBAR IN ABOUT ME SECTION*/
 .html
 {
   width: 90%; 
@@ -191,7 +193,7 @@ img
   width: 65%; 
   background-color: #bad619;
 } 
-
+/* SERVICES SECTION */
 .services
 {
   background: #111;
@@ -246,6 +248,7 @@ img
 {
   max-width: 100%;  
 }
+/* TESTIMONIAL SECTION */
 .testimonials
 {
   background: #000000;
@@ -300,4 +303,103 @@ img
     max-width: 50%; 
     max-height: 70%;    
 }
-
+/* CONTACT SECTION */
+.contact
+{
+  background: #111;
+}
+.formBx
+{
+  min-width: 60%;
+}
+.formBx form
+{
+  display: flex;
+  flex-direction: column;
+}
+.formBx form h3,
+.contactInfo h3
+{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.formBx form input,
+.formBx form textarea
+{
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  outline: none;
+  background: #222;
+  color: #fff;
+  resize: none;
+}
+.formBx form textarea
+{
+  min-height: 200px; 
+}
+.formBx form input::placeholder,
+.formBx form textarea::placeholder
+{
+  color: #999;
+}
+.formBx form input[type="submit"]
+{
+  max-width: 100px;
+  background: #2196F3;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.contactInfo
+{
+  min-width: 40%;
+}
+.contactInfoBx
+{
+  position: relative;
+}
+.contactInfo .box
+{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.contactInfo .box .icon
+{
+  min-width: 40px;
+  padding-top: 4px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  font-size: 24px;
+}
+.contactInfoBx .box .text
+{
+  display: flex;
+  margin-left: 20px ;  
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+.contactInfoBx .box .text h3
+{
+  font-weight: 500;
+  color:#2196f3;
+  margin-bottom: 0 ;
+}
+.copyright
+{
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+ /*Responsive/* 
+ 
