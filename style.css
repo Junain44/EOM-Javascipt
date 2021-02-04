@@ -7,12 +7,13 @@
  box-sizing: border-box;
  font-family:  'Poppins', sans-serif;
  scroll-behavior: smooth;
-
 }
-section
+/*1st Section*/
+.section
 {
   padding:100px;  
 }
+/**/
 .banner
 {
  position: relative;
@@ -24,6 +25,7 @@ section
  justify-content: space-between;
  align-items: center;
 }
+/*Hello, Im Junain Sedick Reynecke*/
 .banner h2
 {
  font-size: 3em;
@@ -31,121 +33,130 @@ section
  font-weight:500;
  line-height: 1.5em;
 }
+/*Junain Sedick Reynecke*/
 .banner h2 span
 {
  font-size: 1.5em;
  font-weight: 700;   
 }    
+/*Im a Junior Web Developer*/
 .banner h3
 {
 font-size: 1.5em;
  color:#fff;
- font-weight: 500;
+ font-weight: 650;
 }
-.btn
+.banner .textBx .pngs
 {
- position: relative;
- background: whitesmoke;
- display:inline-block;
- color: black;
- margin-top: 20px;
- padding: 10px 30px;
- font-size: 18px;
- text-transform: uppercase;
- text-decoration: none;
- letter-spacing: 2px;
- font-weight: 500;
+  margin-left: 50%;
 }
+/**/
 header
 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 100px;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 40px 100px;
+z-index: 1000;
+display: flex;
+justify-content: space-between;
+align-items: center;color: #f44336;
 }
+/*Nav Bar Background*/
 header.sticky 
 {
   background:  #fff;
   padding: 40px 100px;
   box-shadow: 0 5px 20px rgba(0,0,0,0,1);
 }
+/*Portfolio logo*/
 header .logo
 {
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-size: 24px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
   letter-spacing: 2px;
 }
+/*Portfolio logo*/
 header.sticky .logo
 {
-  color: #111;
+  color: rgb(0, 0, 0);
 }
+/*Home/About/Services/Work/Testimonials/Contact*/
 header ul
 {
   position: relative;
   display: flex;
 }
+/*Home/About/Services/Work/Testimonials/Contact*/
 header ul li 
 {
   position: relative;
   list-style: none;
 }
+/*Home/About/Services/Work/Testimonials/Contact*/
 header ul li a
 {
   position: relative;
   display: inline-block;
   margin: 0 15px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
+/*Home/About/Services/Work/Testimonials/Contact*/
 header.sticky ul li a
 {
-  color: #111;
-} 
+  color: rgb(0, 0, 0);
+}
+/*About Me Section*/
 .heading
 {
   width: 100%;
   text-align: center;
   margin-bottom: 30px;
-  color: #111;
+  margin-top: 30px;
 }
+/*About Me*/
 .heading h2
 {
   font-weight: 600;
   font-size: 30px;
+  color: rgb(0, 0, 0);
 }
+/*Information about me*/
 .content
 {
   display: flex;
   justify-content: space-between;
 }
+/*Information about me*/
 .contentBx
 {
   padding-right: 30px;
 }
-.contentBx h3
+/*Im a junior Web Developer*/
+.contentBx h4
 {
- font-size: 35px;
+ font-size: 20px;
  margin-bottom: 10px;
 }
+/*Information About Me*/
 .contentBx p
 {
   color: rgb(0, 0, 0);
-  font-style:italic;
+  font-style: normal;
   font-size: 16px;
 }
+/*Background*/
 .w50
 {
   font-size: 15px;
   min-width: 50%;
 }
+/*Image of me*/
 img
 {
   max-width: 100%;
@@ -167,7 +178,7 @@ img
   padding-bottom: 10px; 
   color: black;
 }
-/* SKILLBAR IN ABOUT ME SECTION*/
+/*Skillbar in About me Section*/
 .html
 {
   width: 90%; 
@@ -193,14 +204,19 @@ img
   width: 65%; 
   background-color: #bad619;
 } 
-/* SERVICES SECTION */
+/*Services Section*/
 .services
 {
   background: #111;
 }
-.heading.white
+.heading .white
 {
   color: #fff;
+}
+.heading h2
+{
+  
+  margin-bottom: 10px;
 }
 .services .content
 {
@@ -209,7 +225,19 @@ img
   flex-wrap: wrap;
   flex-direction: row;
 }
-.services .content .servicesBx
+/*Web Design*/
+.services .content .servicesBx1
+{
+  padding: 40px 20px;
+  background: #222;
+  color: #fff;
+  max-width: 280px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+/*Web Development*/
+.services .content .servicesBx2
 {
   padding: 40px 20px;
   background: #222;
@@ -219,35 +247,96 @@ img
   text-align: center;
   transition: 0.5s;
 }
-.services .content .servicesBx:hover  
+/*App Development*/
+.services .content .servicesBx3
+{
+  padding: 40px 20px;
+  background: #222;
+  color: #fff;
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+/*Background color for Web Design*/
+.services .content .servicesBx1:hover  
 {
   background: #2196f3;
 }
+/*Background color for Web Development*/
+.services .content .servicesBx2:hover  
+{
+  background: #f32121;
+}
+/*Background color for App Development*/
+.services .content .servicesBx3:hover  
+{
+  background: #eeff00;
+}
+/*Images in Services section*/
 .services .content .servicesBx img
 {
   max-width: 80px;
   filter: invert(1);
 }
+/*Headings in Services section*/
 .services .content .servicesBx h2
 {
   font-size: 20px;
   font-weight: 600;
 }
-.work .content
+/*Work Section*/
+.work .heading h2
 {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  font-weight: 600;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
 }
-.work .content .workBx
-{
-  width: 50%;
-  padding: 20px;
+.flip-card {
+  background-color: transparent;
+  width: 500px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  box-sizing: border-box;
 }
-.work .content .workBx img
-{
-  max-width: 100%;  
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
 /* TESTIMONIAL SECTION */
 .testimonials
 {
@@ -308,6 +397,11 @@ img
 {
   background: #111;
 }
+.heading
+{
+  color:white;
+}
+
 .formBx
 {
   min-width: 60%;
@@ -401,5 +495,4 @@ img
   text-align: center;
   padding: 10px;
 }
-
  
