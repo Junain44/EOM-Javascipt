@@ -11,9 +11,11 @@
 /*1st Section*/
 .section
 {
-  padding:100px;  
+  border-left-width: 0px;
+  border-left-style: solid;
+  padding-left: 94px;
+  padding:100px;
 }
-/**/
 .banner
 {
  position: relative;
@@ -32,23 +34,27 @@
  color:#fff;
  font-weight:500;
  line-height: 1.5em;
+ padding-left: 98px;
+ padding-top: 126px;
 }
 /*Junain Sedick Reynecke*/
 .banner h2 span
 {
  font-size: 1.5em;
- font-weight: 700;   
+ font-weight: 700;
 }    
 /*Im a Junior Web Developer*/
 .banner h3
 {
-font-size: 1.5em;
+ font-size: 1.5em;
  color:#fff;
  font-weight: 650;
+ padding-left: 97px;
+ padding-top: 8px;
 }
 .banner .textBx .pngs
 {
-  margin-left: 50%;
+  margin-left: 50px;
 }
 /**/
 header
@@ -61,12 +67,12 @@ padding: 40px 100px;
 z-index: 1000;
 display: flex;
 justify-content: space-between;
-align-items: center;color: #f44336;
+align-items: center;
 }
 /*Nav Bar Background*/
 header.sticky 
 {
-  background:  #fff;
+  background:transparent;
   padding: 40px 100px;
   box-shadow: 0 5px 20px rgba(0,0,0,0,1);
 }
@@ -74,7 +80,7 @@ header.sticky
 header .logo
 {
   color: rgb(255, 255, 255);
-  font-size: 24px;
+  font-size: 30px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
@@ -83,7 +89,7 @@ header .logo
 /*Portfolio logo*/
 header.sticky .logo
 {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 /*Home/About/Services/Work/Testimonials/Contact*/
 header ul
@@ -96,6 +102,7 @@ header ul li
 {
   position: relative;
   list-style: none;
+  font-size: 20px;
 }
 /*Home/About/Services/Work/Testimonials/Contact*/
 header ul li a
@@ -109,102 +116,108 @@ header ul li a
 /*Home/About/Services/Work/Testimonials/Contact*/
 header.sticky ul li a
 {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
-/*About Me Section*/
-.heading
+.menu a:after
+{
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content:"";
+  display: block;
+  height: 2px;
+  left:50%;
+  position: absolute;
+  background:aqua;
+  transition: width 0.6s ease 0s, left 0.6s ease 0s;
+  width: 0;
+}
+.menu a:hover::after
+{
+  width:100%;
+  left: 0;
+}
+
+
+/*ABOUT ME SECTION*/
+.about
+{
+  background-color:black;
+  margin: 0;
+  padding: 0;
+}
+.heading 
 {
   width: 100%;
   text-align: center;
   margin-bottom: 30px;
-  margin-top: 30px;
+  padding-top: 32px;
+  padding-bottom: 22px;
+  color:#fff;
+
 }
-/*About Me*/
 .heading h2
 {
   font-weight: 600;
   font-size: 30px;
-  color: rgb(0, 0, 0);
 }
-/*Information about me*/
+.content
+{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.contentBx h3
+{
+  font-size: 24px;
+  padding-left: 0px;
+}
+/*Para About me*/
+.content
+{
+  width: 100%;
+  text-align: left;
+  color:blanchedalmond;
+  font-weight: 500;
+  padding-left: 94px;
+}
 .content
 {
   display: flex;
   justify-content: space-between;
 }
-/*Information about me*/
 .contentBx
 {
-  padding-right: 30px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
-/*Im a junior Web Developer*/
-.contentBx h4
-{
- font-size: 20px;
- margin-bottom: 10px;
-}
-/*Information About Me*/
-.contentBx p
-{
-  color: rgb(0, 0, 0);
-  font-style: normal;
-  font-size: 16px;
-}
-/*Background*/
-.w50
-{
-  font-size: 15px;
-  min-width: 50%;
-}
-/*Image of me*/
-img
-{
-  max-width: 100%;
-}
-
-* {box-sizing:border-box}
-
-/* Container for skill bars */
 .container {
-  width: 100%; /* Full width */
-  background-color: #ddd; /* Grey background */
-  overflow: hidden;
-  box-shadow: 0 0 10px #2187e7b3;
+  position: relative;
+  width: 50%;
+}
+.w50 img
+{
+  border-radius: 30px;
+  height: auto;
+  width: 440px;
+  margin-right: 252px;
 }
 
-.skills {
-  text-align: right; 
-  padding-top: 10px; 
-  padding-bottom: 10px; 
-  color: black;
+.education
+{
+  font-size: 24px;
+  padding-left: 71px;
+  padding-top: 37px;
+  padding-bottom: 53px
 }
-/*Skillbar in About me Section*/
-.html
+
+.work
 {
-  width: 90%; 
-  background-color: #4CAF50; 
-} 
-.css
-{
-  width: 70%; 
-  background-color: #2196F3;
-} 
-.js 
-{
-  width: 45%; 
-  background-color: #f44336;
+   padding-top:300px;
 }
-.sql 
-{
-  width: 60%; 
-  background-color: #808080;
-}
-.pyt 
-{
-  width: 65%; 
-  background-color: #bad619;
-} 
-/*Services Section*/
+
+
+
+/*SERVICES SECTION*/
 .services
 {
   background: #111;
@@ -215,7 +228,8 @@ img
 }
 .heading h2
 {
-  
+  font-size: 40px;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 .services .content
@@ -285,6 +299,9 @@ img
   font-size: 20px;
   font-weight: 600;
 }
+
+
+
 /*Work Section*/
 .work .heading h2
 {
@@ -337,25 +354,25 @@ img
 }
 
 
+
 /* TESTIMONIAL SECTION */
 .testimonials
 {
-  background: #000000;
+  background: #9999C3;
 }
 .testimonials h2
 {
   font-size: 40px;
-  color: #fff;
+  color:#000;
 }
 .testimonials p
 {
-  font-size: 30px;
-  color: #ddd;
+  font-size: 25px;
 }
 .testimonials .content
 {
   display: flex;
-  justify-content: center;
+  justify-content:space-between;
   flex-wrap:  wrap;  
 }
 .testimonials .content .testimonialBx
@@ -363,39 +380,36 @@ img
   max-width: calc(50% - 40px);
   padding: 60px 40px;
   margin: 20px;
-  background: #ffe601;  
+  background-color:#FCAB10;
 }
-.testimonials .content .testimonialBx p
+.testimonials .content .testimonialBx
 {
-  color: rgb(0, 0, 0);
-  font-style: italic;
-  font-size: 16px;
-  font-weight: 300;
+  max-width: calc(50% - 40px);
+  padding: 60px 40px;
+  margin: 20px;
+  background-color:#FCAB10;
 }
-.testimonials .content .testimonialBx h3
+.testimonials .content .testimonialBx
 {
-  margin-top: 40px;
-  text-align: end;
-  color: rgb(0, 0, 0);
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1em;
+  max-width: calc(50% - 40px);
+  padding: 60px 40px;
+  margin: 20px;
+  background-color:#FCAB10;
 }
-.testimonials .content .testimonialBx h3 span
+.testimonials .content .testimonialBx
 {
-  font-size: 14px;
-  font-weight: 400;
-  font-style: italic;
+  max-width: calc(50% - 40px);
+  padding: 60px 40px;
+  margin: 20px;
+  background-color:#FCAB10;
 }
-.testimonials .content .testimonialBx img
-{
-    max-width: 50%; 
-    max-height: 70%;    
-}
+
+
+
 /* CONTACT SECTION */
 .contact
 {
-  background: #111;
+  background: rgb(26, 24, 24);
 }
 .heading
 {
@@ -418,6 +432,7 @@ img
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 10px;
+  margin-left: 58px;
 }
 .formBx form input,
 .formBx form textarea
@@ -488,6 +503,10 @@ img
   color:#2196f3;
   margin-bottom: 0 ;
 }
+
+
+
+/*COPYRIGHT SECTION*/
 .copyright
 {
   background: #000;
@@ -567,3 +586,4 @@ img
   {
     font-size: 1em;
   }
+}
