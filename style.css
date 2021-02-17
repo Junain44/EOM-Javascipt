@@ -72,7 +72,7 @@ align-items: center;
 /*Nav Bar Background*/
 header.sticky 
 {
-  background:transparent;
+  background:rgb(255, 255, 255);
   padding: 40px 100px;
   box-shadow: 0 5px 20px rgba(0,0,0,0,1);
 }
@@ -89,7 +89,7 @@ header .logo
 /*Portfolio logo*/
 header.sticky .logo
 {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 /*Home/About/Services/Work/Testimonials/Contact*/
 header ul
@@ -116,7 +116,7 @@ header ul li a
 /*Home/About/Services/Work/Testimonials/Contact*/
 header.sticky ul li a
 {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 .menu a:after
 {
@@ -144,6 +144,7 @@ header.sticky ul li a
   background-color:black;
   margin: 0;
   padding: 0;
+
 }
 .heading 
 {
@@ -197,24 +198,12 @@ header.sticky ul li a
 .w50 img
 {
   border-radius: 30px;
-  height: auto;
+  height:auto;
   width: 440px;
   margin-right: 252px;
+  margin-top: 150px;
+  margin-bottom: 100px;
 }
-
-.education
-{
-  font-size: 24px;
-  padding-left: 71px;
-  padding-top: 37px;
-  padding-bottom: 53px
-}
-
-.work
-{
-   padding-top:300px;
-}
-
 
 
 /*SERVICES SECTION*/
@@ -301,58 +290,32 @@ header.sticky ul li a
 }
 
 
-
 /*Work Section*/
-.work .heading h2
+.work 
 {
-  font-weight: 600;
-  font-size: 30px;
-  color: rgb(0, 0, 0);
+  background: seashell;
 }
-.flip-card {
-  background-color: transparent;
-  width: 500px;
-  height: 300px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  box-sizing: border-box;
+.heading h2
+{
+  font-size: 40px;
+  color: #000000;
+  margin-bottom: 10px;
 }
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+.work .content
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+.work .content .workBx
+{
+  width: 50%;
+  padding:20px;
 }
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
+.work .content .workBx img
+{
+  max-width: 100%;
 }
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color: rgb(0, 0, 0);
-  color: white;
-  transform: rotateY(180deg);
-}
-
 
 
 /* TESTIMONIAL SECTION */
@@ -587,3 +550,5 @@ header.sticky ul li a
     font-size: 1em;
   }
 }
+
+
