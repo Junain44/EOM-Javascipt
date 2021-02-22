@@ -319,21 +319,32 @@ Work Section
   max-width: 100%;
   padding-right: 81px;
 }
+hr
+{
+  margin-left: 20%;
+  margin-right: 20%;
+}
 
 
 /* TESTIMONIAL SECTION */
 .testimonials
 {
-  background: #9999C3;
+  background: #ffffff;
 }
 .testimonials h2
 {
   font-size: 40px;
   color:#000;
 }
+.testimonialBx h3
+{
+  color: #000;
+  font-size: 25px;
+}
 .testimonials p
 {
-  font-size: 25px;
+  font-size: 20px;
+  color: #000;
 }
 .testimonials .content
 {
@@ -346,28 +357,7 @@ Work Section
   max-width: calc(50% - 40px);
   padding: 60px 40px;
   margin: 20px;
-  background-color:#FCAB10;
-}
-.testimonials .content .testimonialBx
-{
-  max-width: calc(50% - 40px);
-  padding: 60px 40px;
-  margin: 20px;
-  background-color:#FCAB10;
-}
-.testimonials .content .testimonialBx
-{
-  max-width: calc(50% - 40px);
-  padding: 60px 40px;
-  margin: 20px;
-  background-color:#FCAB10;
-}
-.testimonials .content .testimonialBx
-{
-  max-width: calc(50% - 40px);
-  padding: 60px 40px;
-  margin: 20px;
-  background-color:#FCAB10;
+  background-color:rgb(255, 255, 255);
 }
 /* CONTACT SECTION */
 .contact
