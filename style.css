@@ -20,18 +20,19 @@
 {
  position: relative;
  min-height: 100vh;
- background: url("Background/background3.jpg"); 
+ /* background: url("Background/background3.jpg");  */
  background-size: cover;
  background-position: right;
  display: flex;
  justify-content: space-between;
  align-items: center;
+ animation: backgroundChange 10s linear infinite;
 }
 /*Hello, Im Junain Sedick Reynecke*/
 .banner h2
 {
  font-size: 3em;
- color:#fff;
+ color:rgba(230, 223, 223, 0.5);
  font-weight:500;
  line-height: 1.5em;
  padding-left: 98px;
@@ -42,12 +43,13 @@
 {
  font-size: 1.5em;
  font-weight: 700;
+ color: rgba(230, 223, 223, 0.5);
 }    
 /*Im a Junior Web Developer*/
 .banner h3
 {
  font-size: 1.5em;
- color:#fff;
+ color:rgba(230, 223, 223, 0.5);
  font-weight: 650;
  padding-left: 97px;
  padding-top: 8px;
@@ -89,7 +91,7 @@ header .logo
 /*Portfolio logo*/
 header.sticky .logo
 {
-  color: rgb(0, 0, 0);
+  color: black;
 }
 /*Home/About/Services/Work/Testimonials/Contact*/
 header ul
@@ -110,13 +112,14 @@ header ul li a
   position: relative;
   display: inline-block;
   margin: 0 15px;
-  color: rgb(255, 255, 255);
+  color:white;
   text-decoration: none;
+  font-weight: 700;
 }
 /*Home/About/Services/Work/Testimonials/Contact*/
 header.sticky ul li a
 {
-  color: rgb(0, 0, 0);
+  color: black;
 }
 .menu a:after
 {
@@ -127,7 +130,7 @@ header.sticky ul li a
   height: 2px;
   left:50%;
   position: absolute;
-  background:aqua;
+  background: red;
   transition: width 0.6s ease 0s, left 0.6s ease 0s;
   width: 0;
 }
@@ -323,7 +326,7 @@ Work Section
 .work .content .workBx img
 {
   max-width: 100%;
-  padding-right: 81px;
+  padding-right: 81px
 }
 hr
 {
@@ -457,6 +460,21 @@ hr
   color: #fff;
   text-align: center;
   padding: 10px;
+}
+
+@keyframes backgroundChange {
+  0% {
+    background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Background/background3.jpg");
+  }
+  33% {
+    background-image:linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)),  url("Background/background1.jpg");
+  }
+  66% {
+    background-image:linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)),  url("Background/background2.jpg");
+  }
+  99% {
+    background-image:linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)),  url("Background/background4.jpg");
+  }
 }
 /*Responsiveness*/
 @media screen and (max-width: 740px)
