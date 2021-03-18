@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 *
 /*        */
 {
@@ -20,7 +22,6 @@
 {
  position: relative;
  min-height: 100vh;
- /* background: url("Background/background3.jpg");  */
  background-size: cover;
  background-position: right;
  display: flex;
@@ -139,6 +140,8 @@ header.sticky ul li a
   width:100%;
   left: 0;
 }
+
+
 
 
 /*ABOUT ME SECTION*/
@@ -292,15 +295,17 @@ header.sticky ul li a
 }
 
 
-Work Section
+
+
+/* Work Section */
 .work 
 {
-  background: rgb(163, 139, 123);
+  background: rgb(0, 0, 0);
 }
 .work .heading h2
 {
   font-size: 40px;
-  color: #000000;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 .work .content
@@ -316,7 +321,7 @@ Work Section
 }
 .work .content .workBx span
 {
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 .work .content .workBx img
@@ -329,12 +334,15 @@ Work Section
 {
   text-align: left;
   padding-right: 9%;
+  color: white;
 }
 hr
 {
   margin-left: 20%;
   margin-right: 20%;
 }
+
+
 
 
 /* TESTIMONIAL SECTION */
@@ -370,89 +378,87 @@ hr
   margin: 20px;
   background-color:rgb(255, 255, 255);
 }
-/* CONTACT SECTION */
-.contact
-{
-  background: #111;
+
+
+
+.contact{
+  width: 100%;
+	height: 600px;
+	background-image: url('https://i.ytimg.com/vi/_yTz5rs-55I/maxresdefault.jpg');
+	background-size: cover;
+	overflow: hidden;
 }
-.heading 
-{
-  color: #fff;
-}
-.heading h2
-{
+.contact h2{
+  color: #000;
   font-size: 40px;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-.contact .content
-{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  padding-bottom: 50px;
-}
-/*Web Design*/
-.contact .content .servicesBx1
-{
-  padding: 40px 20px;
-  background: #222;
-  color: #fff;
-  max-width: 280px;
-  margin: 20px;
   text-align: center;
-  transition: 0.5s;
+  padding-top: 41px;
 }
-/*Web Development*/
-.contact .content .servicesBx2
-{
-  padding: 40px 20px;
-  background: #222;
-  color: #fff;
-  max-width: 340px;
-  margin: 20px;
-  text-align: center;
-  transition: 0.5s;
+ .contact{
+	width: 100%;
+	height: 600px;
+	/* background-image: url('https://i.ytimg.com/vi/_yTz5rs-55I/maxresdefault.jpg'); */
+	background-size: cover;
+	overflow: hidden;
+
+} 
+.contact .contact_us {
+	width: 35%;
+	height: 100%;
+	background:rgba(0,0,0,0.3);
+	float: right;
+	margin-right:5%;
+	text-align: center;
+	padding-top: 2%;
 }
-/*App Development*/
-.contact .content .servicesBx3
-{
-  padding: 40px 20px;
-  background: #222;
-  color: #fff;
-  max-width: 340px;
-  margin: 20px;
-  text-align: center;
-  transition: 0.5s;
+.contact .contact_us h2{
+	margin: 0;
+	color: #000000;
+	padding-top: 5%;
+	padding-bottom: 15%;
 }
-/*Background color for Web Design*/
-.services .content .servicesBx1:hover  
-{
-  background: #2196f3;
+
+.contact .contact_us form {
+	width: 80%;
+	margin: auto;
 }
-/*Background color for Web Development*/
-.services .content .servicesBx2:hover  
-{
-  background: #f32121;
+
+.contact .contact_us form input{
+	display: block;
+	width: 100%;
+	background:rgba(0,0,0,0.5);
+	border:0;
+	height: 37px;
+	padding-left: 15px;
+	margin-bottom: 15px;
+	outline: 0;
+	color: #fff;
+
 }
-/*Background color for App Development*/
-.services .content .servicesBx3:hover  
-{
-  background: #eeff00;
+.contact .contact_us form textarea{
+	width: 100%;
+	background:rgba(0,0,0,0.5);
+	border:0;
+	padding-left: 15px;
+	padding-top: 15px;
+	margin-bottom: 15px;
+	color: #fff;
+
+    
 }
-/*Images in Services section*/
-.contact .content .servicesBx img
-{
-  max-width: 80px;
-  filter: invert(1);
+.contact .contact_us form input[type="submit"]{
+	color: #fff;
+	cursor: pointer;
+	width: 150px;
+	height:50px;
+	font-size: 20px;
+	border-radius: 10px;
+    
 }
-/*Headings in Services section*/
-.contact .content .servicesBx h2
-{
-  font-size: 20px;
-  font-weight: 600;
-}
+
+
+
+
 
 
 /*COPYRIGHT SECTION*/
@@ -478,6 +484,10 @@ hr
     background-image:linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)),  url("Background/background4.jpg");
   }
 }
+
+
+
+
 /*Responsiveness*/
 @media screen and (max-width: 740px)
 {
@@ -581,3 +591,4 @@ hr
     font-size: 19px;
 }
 }
+@media (max-width: 500px){}
