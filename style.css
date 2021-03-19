@@ -353,109 +353,37 @@ hr
 .testimonials h2
 {
   font-size: 40px;
-  color:#000;
+  color: rgb(0, 0, 0);
+  padding-top: 41px;
 }
 .testimonialBx h3
 {
-  color: #000;
+  color:white;
   font-size: 25px;
 }
 .testimonials p
 {
   font-size: 20px;
-  color: #000;
+  color: rgb(255, 255, 255);
 }
 .testimonials .content
 {
   display: flex;
   justify-content:space-between;
-  flex-wrap:  wrap;  
+  flex-wrap:  wrap; 
+  background-color: rgb(0, 0, 0); 
+  
 }
 .testimonials .content .testimonialBx
 {
   max-width: calc(50% - 40px);
   padding: 60px 40px;
   margin: 20px;
-  background-color:rgb(255, 255, 255);
+  background-color: darkgrey;
 }
 
 
-
-.contact{
-  width: 100%;
-	height: 600px;
-	background-image: url('https://i.ytimg.com/vi/_yTz5rs-55I/maxresdefault.jpg');
-	background-size: cover;
-	overflow: hidden;
-}
-.contact h2{
-  color: #000;
-  font-size: 40px;
-  text-align: center;
-  padding-top: 41px;
-}
- .contact{
-	width: 100%;
-	height: 600px;
-	/* background-image: url('https://i.ytimg.com/vi/_yTz5rs-55I/maxresdefault.jpg'); */
-	background-size: cover;
-	overflow: hidden;
-
-} 
-.contact .contact_us {
-	width: 35%;
-	height: 100%;
-	background:rgba(0,0,0,0.3);
-	float: right;
-	margin-right:5%;
-	text-align: center;
-	padding-top: 2%;
-}
-.contact .contact_us h2{
-	margin: 0;
-	color: #000000;
-	padding-top: 5%;
-	padding-bottom: 15%;
-}
-
-.contact .contact_us form {
-	width: 80%;
-	margin: auto;
-}
-
-.contact .contact_us form input{
-	display: block;
-	width: 100%;
-	background:rgba(0,0,0,0.5);
-	border:0;
-	height: 37px;
-	padding-left: 15px;
-	margin-bottom: 15px;
-	outline: 0;
-	color: #fff;
-
-}
-.contact .contact_us form textarea{
-	width: 100%;
-	background:rgba(0,0,0,0.5);
-	border:0;
-	padding-left: 15px;
-	padding-top: 15px;
-	margin-bottom: 15px;
-	color: #fff;
-
-    
-}
-.contact .contact_us form input[type="submit"]{
-	color: #fff;
-	cursor: pointer;
-	width: 150px;
-	height:50px;
-	font-size: 20px;
-	border-radius: 10px;
-    
-}
-
+/*CONTACT PAGE*/
 
 
 
