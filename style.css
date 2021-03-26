@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
 *
-/*Landing-Page*/
 {
  margin: 0;
  padding: 0;
@@ -145,11 +144,12 @@ header.sticky ul li a
 
 /*ABOUT ME SECTION*/
 .about{
-  font-family: 'Poppins', sans-serif;
+  background: black;
 }
 .about h2{
   font-size: 40px;
-  color: #000000;
+  color: #ffffff;
+  padding-top: 15px;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -164,9 +164,9 @@ header.sticky ul li a
   width: 45%;
 }
 .about .about-content .left img{
-  height: 400px;
-  padding-left: 224px;
-  object-fit: cover;
+  height: 25rem;
+  width: 100%;
+  object-fit: contain;
   border-radius: 6px;
 }
 .about .about-content .right{
@@ -174,9 +174,10 @@ header.sticky ul li a
   padding-right: 9%;
 }
 .about .about-content .right .text{
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 600;
   margin-bottom: 10px;
+  color: #fff;
 }
 .about .about-content .right .text span{
   color: crimson;
@@ -184,6 +185,7 @@ header.sticky ul li a
 .about .about-content .right p{
   text-align: justify;
   font-size: 25px;
+  color: #fff;
 }
 .about .about-content .right a{
   display: inline-block;
@@ -220,7 +222,7 @@ header.sticky ul li a
   color: #ffffff;
   margin-bottom: 10px;
   text-align: center;
-  padding-top: 34px;
+  padding-top: 15px;
 }
 .services .content
 {
@@ -228,7 +230,7 @@ header.sticky ul li a
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-  padding-bottom: 50px;
+  padding-bottom: 15px;
 }
 /*Web Design*/
 .services .content .servicesBx1
@@ -343,14 +345,107 @@ hr
 
 
 /* TESTIMONIAL SECTION */
-.testimonials
+.test
 {
-  background: #ffffff;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: contain;
+  width: 320px;
+  background: white;
+  box-shadow: 0 15px 50px rgb(0, 0, 0, 0.2);
+  filter: blur(4px);
+  background: #d1ebff;
+  border-radius: 10px;
+}
+.swiper-slide-active
+{
+  filter: blur(0px);
+  background: #fff;
+}
+.testimonialBox
+{
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  padding-top: 90px;
+  color: #999;
+}
+.testimonialBox .quote
+{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  opacity: 0.2;
+}
+.testimonialBox .details
+{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.testimonialBox .details .imgBx
+{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.testimonialBox .details .imgBx img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.testimonialBox .details h3
+{
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #2196f3;
+  line-height: 1.1em;
+}
+.testimonialBox .details h3 span
+{
+  font-size: 12px;
+  color: #666;
+}
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right 
+{
+  background-image: none;
+}
+
+
+
+
+/* .testimonials
+{
+  background: #333;
 }
 .testimonials h2
 {
   font-size: 40px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   padding-top: 41px;
 }
 .testimonialBx h3
@@ -368,7 +463,7 @@ hr
   display: flex;
   justify-content:space-between;
   flex-wrap:  wrap; 
-  background-color: rgb(0, 0, 0); 
+  background-color: #333; 
   
 }
 .testimonials .content .testimonialBx
@@ -376,8 +471,8 @@ hr
   max-width: calc(50% - 40px);
   padding: 60px 40px;
   margin: 20px;
-  background-color: darkgrey;
-}
+  background: black;
+} */
 
 
 
@@ -391,7 +486,7 @@ hr
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(./Background/cont2.jpg); 
+  background: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./Background/cont2.jpg); 
   background-size: cover;
 }
 .contact .content
@@ -403,13 +498,17 @@ hr
 {
   font-size: 36px;
   font-weight: 500;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 .contact .content p
 {
   font-weight: 300;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
+.contactInfo .box .text h2
+{
+  color: white;
+} 
 .container
 {
   width: 100%;
@@ -441,14 +540,109 @@ hr
   border-radius: 50%;
   font-size: 22px;
 }
-
-COPYRIGHT SECTION
-.copyright{
-  background: #000;
+.fa
+{
+  color: white;
+}
+.container .contactInfo .box .text
+{
+  display: flex;
+  margin-left: 20px;
+  font-size:16px;
+  color:#fff;
+}
+.container .contactInfo .box .text h3
+{
+  font-weight: 500;
+  color: #00bcd4;
+}
+.contactForm
+{
+  width: 40%;
+  padding: 40px;
+  margin-left: 25%;
+  background: #fff;
+}
+.contactForm h2
+{
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+.contactForm .inputBox
+{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.container .inputBox input,
+.container .inputBox textarea
+{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  resize: none;
+}
+.contactForm .inputBox span
+{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 00.5s;
+  color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+  width: 100px;
+  background: #00bcd4;
   color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.footer 
+{
+  background: #111;
+}
+.header h2{
   text-align: center;
-  padding: 10px;
-  }
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+  padding-top: 20px;
+}
+.social-icon 
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 20px;
+}
+.footer p{
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+
+
 
 @keyframes backgroundChange {
   0% {
@@ -464,12 +658,9 @@ COPYRIGHT SECTION
     background-image:linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)),  url("Background/background4.jpg");
   }
 }
-
-
-
-
 /*Responsiveness*/
-@media screen and (max-width: 740px)
+/*landing section*/
+@media screen and (max-width: 568px)
 {
   header,
   header.sticky
@@ -483,6 +674,7 @@ COPYRIGHT SECTION
     top: 75px;
     left: -100%;
     display: block;
+
     padding: 100px 50px;
     text-align: center;
     width: 100%;
@@ -541,7 +733,7 @@ COPYRIGHT SECTION
     font-size: 1em;
   }
 }
-@media only screen and (max-width: 1017px) {
+/* @media only screen and (max-width: 1017px) {
   .w50 img {
     width: 100%;
   }
@@ -550,7 +742,7 @@ COPYRIGHT SECTION
   .column {
     width: 100%;
   }
-}
+} */
 /*About section  */
 @media (max-width: 947px){
   .about .about-content .column{
@@ -569,6 +761,5 @@ COPYRIGHT SECTION
 @media (max-width: 500px){
   .about .about-content{
     font-size: 19px;
+  }
 }
-}
-@media (max-width: 500px){}

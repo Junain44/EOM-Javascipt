@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Personal Portfolio | Responsive Website Design</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -36,7 +37,7 @@
         <h2>About Me</h2>
         <div class="about-content">
             <div class="column left">
-                <img src="./Background/Background92.jpg" alt="">
+                <img src="./Background/Background92.jpg" >
             </div>
             <div class="column right">
                 <div class="text">I'm Junain and I'm a Junior Web Developer<span class="typing-2"></span></div>
@@ -49,13 +50,13 @@
                 <a href="./CV Template.odt">Download CV</a>
             </div>
         </div>
-    </div>
+    </div>    
 </section>
 
  <!--Service Section-->
    <section class="services" id="services">
        <div class="heading white">
-           <br><br>
+
            <h2>Services</h2><!--Heading-->
         </div>
         <div class="content">
@@ -81,7 +82,7 @@
             <h2>My Latest Work</h2>
             <p></p>
         </div>
-        <di;v class="content">
+        <div class="content">
             <div class="workBx">
                 <a target="_blank" href="https://eom-project1.netlify.app/"><span><h3>Malaysian-Website</h3></span></a>
                 <a target="_blank" href="https://github.com/Junain44/Malaysian-Website"><span><h3>View Source Code:</h3></span></a>
@@ -115,22 +116,102 @@
             </div>
          </div>     
     </section>
-    <br><br><br>
-    <hr>
-     <section class="testimonials" id="testimonials">
+
+    <section class="test" id="testimonials">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <div class="testimonialBox">
+                  <img src="./services/close.png" class="quote">
+                  <div class="content">
+                    <p>"Junain is such a kind and calm person which translates into his work. 
+                    He is always strives for the best in everything he does. 
+                    I am confident Junain will do justice to his talents and abilities.
+                    Junain has the potential to add value to an organisation. 
+                    I would recommend him."</p>
+                      <div class="details">
+                          <div class="imgBx">
+                              <img src="./Background/Background20.jpeg">
+                          </div>
+                          <h3>Godwin Dzvapatsva<br><span>Lecturer</span></h3>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonialBox">
+                <img src="./services/close.png" class="quote">
+                <div class="content">
+                    <p>"Junain is a Developer with great potential 
+                        and have a hardworking work ethic,he assist where 
+                        he can and help anyone who asks,and always seek new 
+                        info to improve his skills. What stands out the most
+                        about him is he always comes to me for help".</p>
+                    <div class="details">
+                        <div class="imgBx">
+                            <img src="./Background/Background21.jpeg">
+                        </div>
+                        <h3>Thabelo Tsotetsi<br><span>Lecturer</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="testimonialBox">
+                <img src="./services/close.png" class="quote">
+                <div class="content">
+                    <p>"Junain is humble, charismatic and confident. 
+                        His passion and dedication for his work is truly 
+                        remarkable and encouraging. It would be a great honor 
+                        to have him on board."</p>
+                    <div class="details">
+                        <div class="imgBx">
+                            <img src="./Background/candice.png">
+                        </div>
+                        <h3>Candice Amon<br><span>Life Choices Academy Facilitator</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="testimonialBox">
+                <img src="./services/close.png" class="quote">
+                <div class="content">
+                    <p>"Junain is persistant.He always tries his best and is dependable. 
+                        He is able to adapt quickly and shows dedication to his work."</p>
+                    <div class="details">
+                        <div class="imgBx">
+                            <img src="./Background/philiswa.jpg">
+                        </div>
+                        <h3>Philiswa Mqambeli<br><span>Receptionist</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+    
+
+
+
+
+
+
+
+     <!-- <section class="testimonials" id="testimonials">
         <div class="heading">
             <h2>Testimonials</h2>
         </div>
             <div class="content">
                 <div class="testimonialBx">
                 <img src="Background/Background20.jpeg">
-                <h3>Godwin Dzvapatsva<br><span>Head of Curriculum and Learning</span></h3>
+                <h3>Godwin Dzvapatsva<br><span>Lecturer</span></h3>
                 <p>"Junain is such a kind and calm person which translates into his work. 
                     He is always strives for the best in everything he does. 
                     I am confident Junain will do justice to his talents and abilities.
                     Junain has the potential to add value to an organisation. 
                     I would recommend him."</p><br><br>
-                     
                 </div>
             <div class="testimonialBx">
                 <img src="Background/Background21.jpeg">
@@ -140,8 +221,8 @@
                     he can and help anyone who asks,and always seek new 
                     info to improve his skills. What stands out the most
                     about him is he always comes to me for help".</p><br><br><br>
-                    
-             </div>
+                 </div>
+
              <div class="testimonialBx">
                  <img src="Background/candice.png">
                  <h3>Candice Amon<br><span>Life Choices Academy Facilitator</span></h3>
@@ -149,8 +230,8 @@
                     His passion and dedication for his work is truly 
                     remarkable and encouraging. It would be a great honor 
                     to have him on board."</p>
-                    
              </div>
+
              <div class="testimonialBx">
                  <img src="Background/philiswa.jpg">
                  <h3>Philiswa Mqambeli<br><span>Receptionist</span></h3>
@@ -159,16 +240,13 @@
              </div>
             </div>
          </div>
- </section>
+ </section> -->
 
- <section class="contact">
+ <section class="contact" id="contact">
      <div class="content">
          <h2>Contact Us</h2>
-         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Nostrum quas quisquam a consectetur neque voluptas soluta, 
-            ipsum quam, earum libero magni atque odio unde, debitis consequatur. 
-            Nihil voluptatum nisi reiciendis?</p>
      </div>
+     
      <div class="container">
          <div class="contactinfo">
              <div class="box">
@@ -220,9 +298,24 @@
          </div>
      </div>
  </section>
-    <div class="copyright">
-        <p>Copyright &copy|Designed by Junain Reynecke </p>
+
+ <section class="footer">
+    <div class="header">
+      <h2>Inspiring Frontend Developer</h2>
     </div>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com" target="blank_"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://github.com/Junain44?tab=repositories" target="blank_"><img src="https://img.icons8.com/bubbles/100/000000/github.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.linkedin.com/in/junain-sedick-reynecke-720170195/"><img src="https://img.icons8.com/bubbles/100/000000/linkedin.png"/></a>
+        </div>
+      </div>
+      <p>Copyright © 2020 Junain Sedick Reynecke Life Choices Coding Academy. All rights reserved</p>
+  </section>
 
   <script type="text/javascript">
    window.addEventListener('scroll',function(){
@@ -237,6 +330,23 @@
        menu.classList.toggle('active')
    }
 </script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2,
+        slideShadows: true,
+      },
+      loop: true,
+    });
+  </script>
 </body>
 </html>
 
